@@ -8,6 +8,216 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/docs/style.css">
+    <style>
+        
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bitcount+Ink:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/*Basics settings*/
+
+:root{
+    --primary-color: #cdb3f2;
+    --secondary-color: #9f7cc9;
+    --accent-color: #432b60;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    /* font-size: 6.25%; */
+    width: 6.25%;
+    height: 6.25%;
+    /* padding: 6.25%; */
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    padding: 30px;
+}
+.container{
+    max-width: 850px;
+    min-height: 297mm;
+    margin: 0 auto;
+    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.8);
+    background-color: white;
+    display: flex;
+    /* padding: 20px; */
+}
+aside{
+    width: 50%;
+}
+main{
+    background-color: var(--primary-color);
+    width: 50%;
+}
+h1{
+    font-size: clamp(25px,50%,50px);
+    font-weight: bolder;
+}
+h2{
+    font-size: clamp(20px,50%,30px);
+    font-weight: bolder;
+}
+h3{
+    font-size: clamp(19px,50%,23px);
+    font-weight: bolder;
+}
+h4{
+    font-size:clamp(16px,50%,20px);
+    font-weight: bolder;
+}
+h5{
+    font-size:clamp(16px,50%,20px);
+    font-weight: bolder;
+}
+p{
+    font-size: clamp(16px,50%,40px);
+    font-family: "Roboto", monospace;
+}
+ h1,h2,h3,h4,h5{
+    color: var(--accent-color);
+    font-family: "Archivo Black", monospace;
+ }
+ p, li{
+    color: rgb(236, 215, 255);
+ }
+ .hide{
+    width: 100%;
+    height: 30%;
+    visibility: hidden;
+ }
+ hr{
+    width: clamp(100px,80%,300px);
+    height: 5px;
+    background-color: var(--accent-color);
+    border-style: none;
+ }
+ .fa-solid{
+    width: clamp(30px,100%,15px);
+    height: clamp(30px,100%,15px);
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: clamp(8px,50%,10px);
+ }
+
+/*=======================Aside====================================*/
+
+.profile{
+    width: 100%;
+    height: 20%;
+    background-color: var(--accent-color);
+    position: relative;
+}
+.profile::after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 90%;
+    background-image: url("/docs/image/profile.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+    bottom: -10%;
+    right: 25%;
+}
+.about{
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 80%;
+}
+.about .about_item{
+    width: 100%;
+    height: 33.33%;
+}
+/* .about li{
+    font-size: 16rem;
+} */
+.information{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 32px;
+    gap: 20px;
+}
+.skill{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.skill ul{
+    padding: 32px;
+}
+.ski_item{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.int_item img{
+    width: 50px;
+    height: 50px;
+}
+.int_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    gap: 20px;
+}
+.int_item{
+    padding: 32px;
+}
+.line{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+/*=======================Main====================================*/
+
+main section{
+    width: 100%;
+    height: 33.3%;
+}
+/* div{
+    height: 100%;
+} */
+ .perso_info{
+    display: flex;
+    flex-direction: column;
+ }
+ .education{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+ }
+ .work_xp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.item, .head_item{
+    padding: 32px;
+}
+
+@media (max-width: 850px){
+    .container{
+        flex-direction: column;
+        width: 100%;
+        min-height: 100%;
+    }
+    aside, main{
+        width: 100%;
+        height: 100vh;
+    }
+}
+    </style>
 
 </head>
 <body>
