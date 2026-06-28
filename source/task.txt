@@ -1,0 +1,11 @@
+
+✅center text along the vertical axis
+✅ photo box
+✅media query
+✅center the icon in the fig
+✅fix bugs
+- ✅prfil section
+- ✅the radius for the icon in th fig
+- ✅put fig to start in the horizontal axes
+✅ask feedback from gem
+🎯host it with github
